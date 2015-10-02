@@ -24,6 +24,15 @@ $mainoptions = array(
     "id" => "site_logo",
     "type" => "image"
   ),
+  "background_image" => array(
+    "tab" => "main_options",
+    "name" => "background_image",
+    "title" => "Background Image",
+    "description" => __( "Background Image", "example" ),
+    "section" => "main",
+    "id" => "backgound_image",
+    "type" => "image"
+  ),
   "home_page_slider_image1" => array(
     "tab" => "main_options",
     "name" => "home_page_slider_image1",

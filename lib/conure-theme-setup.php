@@ -75,15 +75,6 @@ function conure_widgets_init(){
 	                 ) );
 
 	register_sidebar( array (
-	                 'name' => __( 'Sidebar 5', 'conure' ),
-	                 'id' => 'primary-widget-area-4',
-	                 'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
-	                 'after_widget' => "</div>",
-	                 'before_title' => '<h3 class="widget-title">',
-	                 'after_title' => '</h3>',
-	                 ) );
-
-	register_sidebar( array (
 	                 'name' => __( 'Footer Widget Left', 'conure' ),
 	                 'id' => 'footer-widget-left',
 	                 'before_widget' => '<div class="widget-container-footer">',

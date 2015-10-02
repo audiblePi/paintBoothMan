@@ -1,4 +1,14 @@
-<?php get_header(); ?>
+<?php
+	get_header(); 
+	global $up_options;
+	$background_image = $up_options->background_image;
+?>
+<script>
+	jQuery(function($){
+		var background_image = "<?php echo $background_image ?>";
+		$('.header').css('background-image', 'url(' + background_image + ')');
+	});
+</script>
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post();
 	if (get_field('header_image')) :?>		

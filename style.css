@@ -67,7 +67,7 @@ p{color:#fff;line-height:1.375;font-size:12pt;}
 .slider-container .slider-overlay button{color:#8B9719; background:#fff;text-transform:uppercase; border:none;box-shadow: 2px 2px 2px rgba(0,0, 0, .5); }
 
 /*front page*/
-.front-page {padding-top:50px; padding-bottom:50px;}
+.front-page {padding-top:50px; padding-bottom:50px;background:#fff;}
 .front-page-callouts {padding-bottom:40px !important;}
 .callout { background:#333333; border:2px solid #333333; width:30% !important; margin-right:5%;border-bottom-left-radius: 15px;border-bottom-right-radius: 15px;padding: 0px !important;text-align:center;box-shadow: 2px 2px 2px rgba(0,0, 0, .5);}
 .callout:last-of-type{margin-right:0px;}
