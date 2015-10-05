@@ -36,6 +36,7 @@ p{color:#fff;line-height:1.375;font-size:12pt;}
 .header .login-panel button {color:#fff; border-radius:4px;border:none; background:#8B9719;box-shadow: 2px 2px 2px rgba(0,0, 0, .5);padding: 2px 10px;margin-left: 10px;}
 .header .shopping-cart-menu {float:right;text-align:right;font-weight:bold; padding-right:0px;}
 .header .shopping-cart-menu a{color:#000 !important;float:right;}
+.icon-shopping-cart {font-size: 1.2em;color: #FA7718;}
 .header .phone-number {text-align:right;font-weight:normal;font-size:1.5em;color:#8B9719;margin-right:15px;float:right;font-size: 1.8em;}
 
 /*menu*/

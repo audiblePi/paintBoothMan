@@ -301,7 +301,8 @@ function woocommerce_header_add_to_cart_fragment( $fragments ) {
 	?>
 	<a class="cart-contents" href="<?php echo WC()->cart->get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>">
 		<?php echo sprintf (_n( '(%d) Item', '(%d) Items' , WC()->cart->cart_contents_count ), WC()->cart->cart_contents_count ); ?> In Your Shopping Cart<?php #echo WC()->cart->get_cart_total(); ?>
-		<img src="/wp-content/themes/paintBoothMan/assets/images/cart.png">
+		<!-- <img src="/wp-content/themes/paintBoothMan/assets/images/cart.png"> -->
+		<i class="icon-shopping-cart"></i>
 	</a>	
 	<?php
 	$fragments['a.cart-contents'] = ob_get_clean();
