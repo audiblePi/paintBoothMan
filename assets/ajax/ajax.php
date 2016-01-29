@@ -24,7 +24,7 @@ function show($p){
 }
 
 function showCategory($c){
-    echo do_shortcode('[product_category per_page="500" columns="3" category="'.$c.'"]');
+    echo do_shortcode('[product_category per_page="500" orderby="price" order="asc" columns="3" category="'.$c.'"]');
     exit();
 }
 
@@ -34,7 +34,7 @@ function showSizes($c){
         'posts_per_page'   => -1,
         'offset'           => 0,
         'orderby'          => 'date',
-        'order'            => 'DESC',
+        'order'            => 'ASC',
         'post_type'        => 'product',
         'product_cat'      => $c,
         'post_status'      => 'publish',
@@ -60,7 +60,7 @@ function showSizes($c){
         }
     }
     usort($sizeArray, "cmp");
-    $select = "<select class='sizes'><option value=''>Select Size</option>";
+    $select = "<select class='sizes'><option value='please-select'>Select Size</option>";
     foreach ($sizeArray as $z){
         //echo $z->slug."<br>";
         $select.="<option value='".$z->slug."'>".$z->name."</option>";

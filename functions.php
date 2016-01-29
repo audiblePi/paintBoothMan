@@ -236,9 +236,9 @@ function showFilter($atts){
 							<option value="manufacturer">By Manufacturer</option>
 						</select>
 					</li>
-					<li>
+					<li class="category">
 						<select class="type" disabled>
-							<option value="">Select Type</option>
+							<option value="please-select">Select Type</option>
 							<optgroup label="Ceiling Filters">
 								<option value="afr-1-premium">AFR-1 Premium</option>
 								<option value="ff-560-gx">FF-560 GX</option>
@@ -282,7 +282,7 @@ function showFilter($atts){
 					</li>
 					<li class="size-wrapper">
 						<select class="sizes" "style=display:none" disabled>
-							<option value="">Select Size</option>
+							<option value="please-select">Select Size</option>
 						</select>
 					</li>
 					<!--<li class="keyword-search-wrapper">

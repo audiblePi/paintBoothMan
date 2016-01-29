@@ -129,12 +129,15 @@ p{color:#fff;line-height:1.375;font-size:12pt;}
 #content-wrapper .search-wrapper input:disabled {color : lightGray;font-style: italic;opacity:.6;}
 #content-wrapper .search-wrapper button { border: none; text-transform: uppercase; color: #fff; background: #FA7718; border-radius: 10px;}
 
-#content-wrapper .woo-wrap {padding:20px 0px;min-height: 700px;}
+#content-wrapper .woo-wrap {padding:20px 0px;min-height: 200px;}
 #content-wrapper .woo-wrap a, #content-wrapper .woocommerce a{color:#333 !important;}
 #content-wrapper .woo-wrap ul.products li{text-align:center;padding: 20px;margin-right: 1.2%;margin-left: 1.2%;}
 #content-wrapper .woo-wrap ul.products li h3{font-size: 1.1em !important;font-weight: bold;}
 #content-wrapper .woo-wrap ul.products li a img {border:4px solid #666;/*min-height: 153px;*/}
 #content-wrapper .woo-wrap ul.products li a img.woocommerce-placeholder {max-height:153px;}
+
+#content-wrapper .woo-wrap ul.products li a .description p {font-size: .9em;}
+
 #content-wrapper .woo-wrap ul.products .button, #content-wrapper .woo-wrap button.alt, .button.alt{text-transform: uppercase; color: #fff !important; background: #FA7718 !important; border-radius: 10px;}
 #content-wrapper .woo-wrap .pre-loader{position: relative; left: 0px; top: 0px; width: 100%; height: 400px;/*display:none;*/ z-index: 9999; background: url(/wp-content/themes/paintBoothMan/assets/images/loadera64.gif) center no-repeat #fff;}
 #content-wrapper .woo-wrap .variations .label {color:#000;}
