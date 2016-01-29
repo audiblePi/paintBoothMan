@@ -28,6 +28,9 @@ jQuery(function($){
 	});
 
     $('.filter-by').val('default');
+    $('.search-wrapper .type').val("please-select");
+    $('.search-wrapper .sizes').val('please-select');
+
 
     $('.search-wrapper .filter-by').change(function(){
         $('.woo-wrap .woocommerce').hide();
@@ -65,7 +68,6 @@ jQuery(function($){
 
     function getCategory(c){
         $('.size-wrapper').html('<select class="sizes" "style=display:none" disabled><option value="please-select">Loading...</option></select>');
-        //$('.woo-wrap').html('<div class="pre-loader"></div>');
         $('.search-wrapper .sizes').val('please-select');
         $('.search-wrapper .sizes').attr('disabled', true);
         $('.woo-wrap .woocommerce').hide();
@@ -78,7 +80,6 @@ jQuery(function($){
            success: function (text) {
                 $('.woo-wrap').html(text);
                 $('.woo-wrap .woocommerce').hide();
-                //setTimeout(function(){$('.woo-wrap .woocommerce').fadeIn(200);}, 200);
                 getSizes(c);
             }
         });
@@ -102,12 +103,10 @@ jQuery(function($){
     function showThisSize(s){
         var temp = "product-cat-" + s;
         $('.woocommerce ul.products li').each(function(){
-            //$(this).fadeOut(200);
             $(this).hide();
             if ($(this).hasClass(temp)){
                 $(this).removeClass('first');
                 $(this).removeClass('last');
-                $(this).delay(210).fadeIn(200);
                 $(this).show();
             }
         });
