@@ -287,8 +287,8 @@ function showFilter($atts){
 					</li>
 					<!--<li class="keyword-search-wrapper">
 						<input class="search-keyword" placeholder="Keyword" disabled>
-					</li>
-					<li><button disabled>Search</button></li>-->
+					</li>-->
+					<li class="loader"><div><img width="20px" src="/wp-content/themes/paintBoothMan/assets/images/loading.gif"></div></li>
 				</ul>
 			</div>
 		</div>';

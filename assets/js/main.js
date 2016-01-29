@@ -26,6 +26,7 @@ jQuery(function($){
 		moveSlides: 1,
 		pager: 1
 	});
+    var loader = $('.search-wrapper .loader');
 
     $('.filter-by').val('default');
     $('.search-wrapper .type').val("please-select");
@@ -67,7 +68,8 @@ jQuery(function($){
     });
 
     function getCategory(c){
-        $('.size-wrapper').html('<select class="sizes" "style=display:none" disabled><option value="please-select">Loading...</option></select>');
+        $('.size-wrapper').html('<select class="sizes loading" "style=display:none" disabled><option value="please-select">Loading...</option></select>');
+        loader.css('visibility', 'visible');
         $('.search-wrapper .sizes').val('please-select');
         $('.search-wrapper .sizes').attr('disabled', true);
         $('.woo-wrap .woocommerce').hide();
@@ -96,6 +98,7 @@ jQuery(function($){
             success: function (text) {
                 $('.size-wrapper').html(text);
                 $('.search-wrapper .sizes').attr('disabled', false);
+                loader.css('visibility', 'hidden');
             }
         });
     }
