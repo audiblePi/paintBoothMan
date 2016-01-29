@@ -288,7 +288,7 @@ function showFilter($atts){
 					<!--<li class="keyword-search-wrapper">
 						<input class="search-keyword" placeholder="Keyword" disabled>
 					</li>-->
-					<li class="loader"><div><img width="20px" src="/wp-content/themes/paintBoothMan/assets/images/loading.gif"></div></li>
+					<li class="loader"><div><img src="/wp-content/themes/paintBoothMan/assets/images/loading.gif"></div></li>
 				</ul>
 			</div>
 		</div>';
